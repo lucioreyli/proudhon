@@ -1,13 +1,12 @@
 import type { NextPage } from 'next'
-import { Nav } from '../components/Nav'
+import { Header } from './components/Header'
+import { Projects } from './components/Projects'
 
 const Home: NextPage = () => {
   return (
-    <main>
-      <div>
-        <Nav />
-        <h1>teste</h1>
-      </div>
+    <main className="px-4 sm:px-8">
+      <Header />
+      <Projects />
     </main>
   )
 }

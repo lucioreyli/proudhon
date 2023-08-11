@@ -1,21 +1,26 @@
-import { ComponentProps, FC } from 'react'
-import { ThemeButton } from './ThemeButton'
+'use client'
+import type { ComponentProps, FC, PropsWithChildren } from 'react'
+import type { LinkProps } from 'next/link'
+import { Link } from './Link'
 
-const NavItem: FC<ComponentProps<'a'>> = ({ children }) => {
-  return <a>{children}</a>
-}
+const NavItem: FC<PropsWithChildren<LinkProps>> = ({ children, ...props }) => (
+  <Link
+    {...(props as LinkProps & ComponentProps<'a'>)}
+    className="font-extralight hidden sm:block text-dark dark:text-white hover:text-blue"
+  >
+    {children}
+  </Link>
+)
 
 export const Nav: FC = () => {
   return (
-    <nav className="flex justify-between font-light">
-      <p className="">LucioReyli</p>
+    <nav className="flex justify-between font-light py-11">
+      <p className="font-normal">LucioReyli</p>
       <div className="flex gap-7">
-        <NavItem href="#">About</NavItem>
-        <NavItem href="#">Our Work</NavItem>
-        <NavItem href="#">Services</NavItem>
-        <NavItem href="#">Achievement</NavItem>
+        <NavItem href="/#projects">Projetos</NavItem>
+        <NavItem href="#">Resumo</NavItem>
+        <NavItem href="#">Contato</NavItem>
       </div>
-      <ThemeButton />
     </nav>
   )
 }
