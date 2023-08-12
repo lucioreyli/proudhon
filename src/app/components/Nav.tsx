@@ -1,11 +1,9 @@
-'use client'
-import type { ComponentProps, FC, PropsWithChildren } from 'react'
-import type { LinkProps } from 'next/link'
-import { Link } from './Link'
+import type { FC, PropsWithChildren } from 'react'
+import { Link, type LinkProps } from './Link'
 
 const NavItem: FC<PropsWithChildren<LinkProps>> = ({ children, ...props }) => (
   <Link
-    {...(props as LinkProps & ComponentProps<'a'>)}
+    {...(props as LinkProps)}
     className="font-extralight hidden sm:block text-dark dark:text-white hover:text-blue"
   >
     {children}

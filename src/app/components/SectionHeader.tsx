@@ -6,7 +6,7 @@ export const SectionHeader: FC<PropsWithChildren<ComponentProps<'h3'>>> = (
 ) => (
   <h3
     className={twMerge(
-      'font-thin uppercase my-24 pt-28 border-t border-[#c6c6c6]',
+      'font-extralight uppercase mt-24 mb-12 pt-28 border-t border-[#c6c6c6]',
       props.className,
     )}
     {...props}
