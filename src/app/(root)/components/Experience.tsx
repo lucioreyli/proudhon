@@ -6,7 +6,16 @@ export const Experience: FC = () => (
   <>
     <SectionHeader>Experiência</SectionHeader>
     <div>
-      <ExperienceItem />
+      <ExperienceItem
+        date={['Fev 2022', 'Mar 2023']}
+        role="Front End Mobile Developer"
+        key="hi"
+        location={{
+          uri: '#',
+          label: 'Riderize/Santa Catarina - Brasil',
+        }}
+        description={['asdasd']}
+      />
     </div>
   </>
 )
