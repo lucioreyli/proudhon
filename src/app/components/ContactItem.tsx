@@ -2,10 +2,7 @@ import Link, { type LinkProps } from 'next/link'
 import type { ElementType, FC } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-type Props = LinkProps & {
-  Icon: ElementType
-  label: string
-}
+type Props = LinkProps & { Icon: ElementType; label: string }
 
 export const ContactItem: FC<Props> = ({ Icon, label, ...props }) => (
   <Link

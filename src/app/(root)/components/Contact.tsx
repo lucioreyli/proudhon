@@ -5,7 +5,7 @@ import { LucideIcon } from '@/app/components/LucideIcon'
 
 export const Contact: FC = () => (
   <ElementContainer data-id="contact" label="Contato">
-    <div className="grid sm:grid-cols-3 gap-3 w-full">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 w-full">
       <ContactItem
         href="https://linkedin.com/in/lucioandradejr"
         Icon={(props) => <LucideIcon name="linkedin" {...props} />}
