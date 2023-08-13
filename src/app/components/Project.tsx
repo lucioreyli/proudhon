@@ -26,7 +26,7 @@ export const Project: FC<ProjectProps> = (props) => {
         <Image className="h-48 rounded-sm" src={props.image} alt={props.name} />
       </Link>
       <div className="flex mt-7 mb-3 justify-between">
-        <h4 className="font-normal text-md ">{props.name}</h4>
+        <h4 className="font-normal text-md">{props.name}</h4>
         <div className="flex gap-5">
           <Link href={props.githubUrl} externalLink>
             <DevIcon

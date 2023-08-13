@@ -15,9 +15,9 @@ export const Nav: FC = () => {
     <nav className="flex justify-between font-light py-11">
       <p className="font-normal">LucioReyli</p>
       <div className="flex gap-7">
-        <NavItem href="/#projects">Projetos</NavItem>
-        <NavItem href="#">Resumo</NavItem>
-        <NavItem href="#">Contato</NavItem>
+        <NavItem href="#projects">Projetos</NavItem>
+        <NavItem href="#experience">Resumo</NavItem>
+        <NavItem href="#contact">Contato</NavItem>
       </div>
     </nav>
   )

@@ -8,7 +8,10 @@ export const metadata: Metadata = {
 }
 
 const RootLayout: React.FC<React.PropsWithChildren> = async ({ children }) => (
-  <html lang="pt" className="dark:bg-bg-dark dark:text-white scroll-smooth">
+  <html
+    lang="pt"
+    className="dark:bg-bg-dark dark:text-white text-dark scroll-smooth"
+  >
     <body className={inter.className}>{children}</body>
   </html>
 )

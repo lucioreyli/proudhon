@@ -10,8 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         dark: '#1a1a1a',
-        'bg-dark': '#111111',
+        'bg-dark': '#111',
         blue: '#0071e3',
+        subtitle: '#c4c4c4',
       },
     },
   },
