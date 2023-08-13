@@ -18,7 +18,7 @@ export const ExperienceItem: FC<Props> = (props) => (
       </span>
     </div>
     <Link
-      className="block font-light text-sm"
+      className="self-start font-light text-sm"
       href={props.location.uri}
       externalLink
     >

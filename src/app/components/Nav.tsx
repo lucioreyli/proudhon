@@ -12,8 +12,8 @@ const NavItem: FC<PropsWithChildren<LinkProps>> = ({ children, ...props }) => (
 
 export const Nav: FC = () => {
   return (
-    <nav className="flex justify-between font-light py-11">
-      <p className="font-normal">LucioReyli</p>
+    <nav className="flex justify-between font-light py-12">
+      <p className="font-normal">L.A.</p>
       <div className="flex gap-7">
         <NavItem href="#projects">Projetos</NavItem>
         <NavItem href="#experience">Resumo</NavItem>
