@@ -15,6 +15,7 @@ export const Education: FC = () => (
         description={[
           'Ensino técnico com foco em desenvolvimento de aplicações, hardwares e banco de dados.',
         ]}
+        externalLink={false}
       />
       <ExperienceItem
         date={['2019']}
@@ -27,6 +28,7 @@ export const Education: FC = () => (
           'Bootcamp direcionado ao desenvolvimento de aplicações com as principais tecnologias do mercado.',
           'Desenvolvimento com as tecnologias: NodeJS, React, React Native, MongoDB, MySQL e Postgres.',
         ]}
+        externalLink={false}
       />
     </div>
   </ElementContainer>

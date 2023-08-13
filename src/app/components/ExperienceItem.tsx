@@ -7,9 +7,13 @@ type Props = {
   location: LinkType
   description: string[]
   date: [startDate: string, endDate?: string]
+  externalLink?: boolean
 }
 
-export const ExperienceItem: FC<Props> = (props) => (
+export const ExperienceItem: FC<Props> = ({
+  externalLink = true,
+  ...props
+}) => (
   <div className="flex flex-col gap-y-3 w-full">
     <div className="w-full md:flex justify-between items-center">
       <h4 className="font-light text-2xl">{props.role}</h4>
@@ -20,7 +24,7 @@ export const ExperienceItem: FC<Props> = (props) => (
     <Link
       className="self-start font-light text-sm"
       href={props.location.uri}
-      externalLink
+      externalLink={externalLink}
     >
       {props.location.label}
     </Link>
