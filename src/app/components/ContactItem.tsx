@@ -20,4 +20,3 @@ export const ContactItem: FC<Props> = ({ Icon, label, ...props }) => (
     <span className="font-light flex">{label}</span>
   </Link>
 )
-

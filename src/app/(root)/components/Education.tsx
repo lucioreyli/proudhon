@@ -31,4 +31,3 @@ export const Education: FC = () => (
     </div>
   </ElementContainer>
 )
-
